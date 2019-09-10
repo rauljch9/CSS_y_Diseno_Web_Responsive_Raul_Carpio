@@ -1,0 +1,145 @@
+
+
+#imagen-central{
+  background: #82c3a6;
+  width: 100%;
+  order: 1;
+}
+
+#imagen-secundaria{
+  background: #d5c75f;
+  width: 100%;
+  order: 2;
+  display: flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+
+}
+
+#imagen-secundaria figure{
+  margin: 0px;
+}
+#imagen-secundaria figure a{
+  margin: 0px;
+}
+#imagen-secundaria figure a img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  border: 1px solid black;
+}
+
+#imagen-secundaria figure figcaption{
+  text-decoration: underline;;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#imagen-secundaria-izquierda{
+  width: 100%;
+  order: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#imagen-secundaria-izquierda a img{
+  transition: transform 0.3s;
+}
+
+#imagen-secundaria-izquierda a img:hover{
+  box-shadow: 2px 2px 2px #82c3a6;
+  transform: rotate(10deg);
+}
+
+#imagen-secundaria-derecha{
+  width: 100%;
+  order: 2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#imagen-secundaria-derecha a img{
+  transition: transform 0.3s;
+}
+
+#imagen-secundaria-derecha a img:hover{
+  box-shadow: 2px 2px 2px #82c3a6;
+  transform: translate(20px,-5px);
+}
+
+
+
+/*Moviles*/
+@media (max-width:899px) {
+  #imagenes-secundaria{
+    width: 100%;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+
+    #imagen-secundaria figure{
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 0px;
+    }
+
+  #imagen-central img,#imagen-secundaria figure a img{
+    width: 100%;
+    margin: 0px;
+  }
+
+  #imagen-secundaria figure{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  #imagen-secundaria figure a{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+
+  .pie {
+    width: 100%;
+    margin: none;
+  }
+
+  .pie .columna-pie{
+    width: 96%;
+    margin: none;
+  }
+}
+
+/*Ordenadores*/
+@media (min-width:900px) {
+
+  #imagen-secundaria{
+    width: 100%;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    -moz-flex-flow: row;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #imagen-central img,#imagen-secundaria figure a img{
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  #imagen-secundaria-izquierda{
+    width: 50%;
+  }
+  #imagen-secundaria-derecha{
+    width: 50%;
+  }
+
+}

@@ -1,0 +1,252 @@
+body{
+  margin-left: auto;
+  margin-right: auto;
+  background: #02010a;
+  font-family: calibri;
+}
+
+
+
+@keyframes animacion-principal {
+  0%{
+    transform: translate(0%,150%);
+  }
+  60%{
+    transform: translate(0%,-5%);
+  }
+  100%{
+    transform: translate(0%,0%);
+  }
+
+}
+
+
+.contenido{
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-flow: column;
+
+  position:relative;
+
+  animation: animacion-principal 1s;
+  -webkit-animation: animacion-principal 1s;
+  -moz-animation: animacion-principal 1s;
+  -o-animation: animacion-principal 1s;
+}
+
+.cabecera{
+  background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+#nombre-del-sitio{
+  float: left;
+  margin-top: 10px;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+#barra{
+  float: right;
+  margin-top: 18px;
+
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  -moz-flex-flow: row;
+  -o-flex-flow: row;
+  flex
+}
+.navegacion{
+  float: center;
+}
+#barra a{
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  font-size: 1.5em;
+  margin: 10px 10px;
+  margin-top: 10px;
+
+}
+
+#barra #inicio{
+    order: 1;
+}
+#barra #paisajes{
+    order: 2;
+}
+#barra #retratos{
+    order: 3;
+}
+
+img{
+  box-shadow: 2px 2px 2px #02010a;
+  width: 90%;
+  margin-left: 5%;
+
+}
+
+
+
+
+.pie{
+  border-radius: 0px 0px 10px 10px;
+  background: #C6d5c5;
+  order: 2;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  -moz-flex-flow: row;
+}
+.columna-pie {
+  margin: 15px;
+  width: 25%;
+}
+#pie1{
+  order: 1;
+}
+#pie2{
+  order: 2;
+}
+#pie3{
+  order: 3;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+}
+#pie4{
+  order: 4;
+}
+
+.red-social{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    -moz-flex-flow: row;
+}
+.red-social img{
+    box-shadow: none;
+    margin-left: 5px;
+    width: 20px;
+    order: 1;
+}
+.red-social p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2%;
+    order: 2;
+}
+
+#facebook{
+  order: 1;
+}
+#instagram{
+  order: 2;
+}
+#whatsapp{
+  order: 3;
+}
+
+/*Moviles*/
+@media (max-width:899px) {
+  #nombre-del-sitio{
+    text-align: center;
+  }
+  #barra{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+
+  .contenido{
+    width: 100%;
+    margin-left: auto;
+		margin-right: auto;
+  }
+
+  .pie{
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+  .pie .columna-pie{
+    margin-left: 3%;
+    margin-right: 0%;
+    width: 75%;
+
+  }
+
+  .pie .columna-pie p{
+    width:80%;
+    padding-left: 10%;
+  }
+
+  #nombre-del-sitio{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .navegacion{
+    float: none;
+    width: 100%;
+
+  }
+  #barra{
+    float: none;
+    width: 90%;
+    margin-left: 5%;
+    align-content: center;
+  }
+
+
+
+  .red-social{
+      width: 90%;
+      margin-left: none;
+      margin-right: none;
+  }
+
+  .red-social img{
+      width: 8%;
+  }
+  .red-social p{
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 0%;
+  }
+
+
+}
+
+/*Ordenadores*/
+@media (min-width:900px) {
+  .contenido, .cabecera{
+    width: 900px;
+    margin-left: auto;
+		margin-right: auto;
+  }
+  #nombre-del-sitio{
+    margin-left: 30px;
+  }
+}

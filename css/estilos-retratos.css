@@ -1,0 +1,61 @@
+
+
+.galeria{
+  background: #d5c75f;
+
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+}
+
+
+.galeria figure{
+  margin: 2%;
+  width: 28%
+}
+
+
+.galeria figure img{
+  width: 100%;
+  margin: none;
+}
+
+
+#imagen1{
+  filter: blur(10px);
+}
+
+#imagen2,#imagen4,#imagen6{
+  filter: grayscale(100%);
+}
+
+#imagen3{
+  filter: sepia(90%);
+}
+
+
+
+
+/*Moviles*/
+@media (max-width:899px) {
+  .galeria{
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    -moz-flex-flow:column;
+    -o-flex-flow: column;
+  }
+  .galeria figure{
+    margin: 4%;
+    width: 90%;
+  }
+  .galeria figure img{
+    margin: 0px;
+    width: 100%;
+  }
+
+}
